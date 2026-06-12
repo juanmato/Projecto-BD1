@@ -1,0 +1,23 @@
+# Node / frontend
+node_modules/
+dist/
+*.log
+
+# Python / backend
+__pycache__/
+*.pyc
+.venv/
+venv/
+local.db
+
+# Entornos
+.env
+.env.local
+
+# Docker volumes (datos de mysql nunca se commitean)
+mysql_data/
+
+# Editores
+.vscode/
+.idea/
+.DS_Store
