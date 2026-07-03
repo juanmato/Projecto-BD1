@@ -15,7 +15,7 @@ export function InstitutionalHeader({ children }: { children?: React.ReactNode }
             <Escudo size={52} />
             <div className="brand-text">
               <h1>Universidad Nacional de Ingeniería</h1>
-              <p>Facultad de Ingeniería — Sistema de Asistencia</p>
+              <p>Facultad de Ingeniería — Deporte Universitario</p>
             </div>
           </div>
           {children}
@@ -31,7 +31,7 @@ export function InstitutionalFooter() {
       <div className="footer-inner">
         <div>
           <strong>Universidad Nacional de Ingeniería</strong>
-          <p>Facultad de Ingeniería · Departamento de Bedelía</p>
+          <p>Facultad de Ingeniería · Deporte Universitario</p>
         </div>
         <nav className="footer-links">
           <a href="#">Inicio</a>

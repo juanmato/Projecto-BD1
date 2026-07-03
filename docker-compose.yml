@@ -3,13 +3,16 @@ services:
     image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: asistencia
+      MYSQL_DATABASE: deportes_udelar
       MYSQL_USER: app
       MYSQL_PASSWORD: app
     ports:
       - "3309:3306"
     volumes:
       - mysql_data:/var/lib/mysql
+      # El script SQL crea el esquema completo y los datos maestros al
+      # inicializar el contenedor (solo la primera vez, con el volumen vacío).
+      - ./db/script.sql:/docker-entrypoint-initdb.d/01-script.sql:ro
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-proot"]
       interval: 5s
@@ -19,7 +22,11 @@ services:
   backend:
     build: ./backend
     environment:
-      DATABASE_URL: mysql+pymysql://app:app@db:3306/asistencia
+      DB_HOST: db
+      DB_PORT: "3306"
+      DB_USER: app
+      DB_PASSWORD: app
+      DB_NAME: deportes_udelar
     ports:
       - "8000:8000"
     depends_on:
