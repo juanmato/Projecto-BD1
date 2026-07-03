@@ -98,8 +98,8 @@ Cumplimos la restricción de la letra usando **PyMySQL con SQL crudo**:
 
 ## 5. Consultas adicionales propuestas (justificación)
 
-1. **Lista de espera por actividad con posición** — operativa: ante una baja,
-   saber quién entra; usa función de ventana `ROW_NUMBER()`.
+1. **Lista de espera por actividad en orden de prioridad** — operativa: ante
+   una baja, saber quién entra; ordenada por `fecha_inscripcion` (FIFO).
 2. **Estudiantes sin ninguna inscripción** — útil para difusión del programa
    deportivo; patrón `LEFT JOIN ... IS NULL` (anti-join).
 3. **Uso de espacios (actividades y horas semanales)** — planificación de

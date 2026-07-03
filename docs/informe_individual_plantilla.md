@@ -14,7 +14,7 @@ frontend, consultas, pruebas, documentación...)_
 ## Aprendizajes
 
 _(qué aprendiste: diseño relacional, claves y restricciones, SQL sin ORM,
-transacciones y bloqueos, funciones de agregación/ventana, Docker...)_
+transacciones y bloqueos, funciones de agregación, Docker...)_
 
 ## Dificultades
 

@@ -649,15 +649,12 @@ def rep_lista_espera(conn=Depends(get_conn)):
         """
         SELECT a.nombre AS actividad,
                CONCAT(e.apellido, ', ', e.nombre) AS estudiante,
-               i.fecha_inscripcion,
-               ROW_NUMBER() OVER (
-                   PARTITION BY a.id ORDER BY i.fecha_inscripcion
-               ) AS posicion_en_espera
+               i.fecha_inscripcion
         FROM inscripcion i
         JOIN actividad a ON a.id = i.actividad_id
         JOIN estudiante e ON e.id = i.estudiante_id
         WHERE i.estado = 'lista_espera'
-        ORDER BY a.nombre, posicion_en_espera
+        ORDER BY a.nombre, i.fecha_inscripcion
         """,
     )
 
