@@ -6,7 +6,7 @@
 -- backend (/reportes/...), implementadas con este mismo SQL.
 -- ============================================================================
 
-USE deportes_udelar;
+USE deportes_ucu;
 
 -- ----------------------------------------------------------------------------
 -- 1. Actividades con mayor cantidad de inscriptos confirmados.

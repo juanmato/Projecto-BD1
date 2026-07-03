@@ -14,7 +14,7 @@ DB_CONFIG = {
     "port": int(os.getenv("DB_PORT", "3306")),
     "user": os.getenv("DB_USER", "app"),
     "password": os.getenv("DB_PASSWORD", "app"),
-    "database": os.getenv("DB_NAME", "deportes_udelar"),
+    "database": os.getenv("DB_NAME", "deportes_ucu"),
     "charset": "utf8mb4",
     "cursorclass": DictCursor,   # las filas vuelven como dict {columna: valor}
     "autocommit": False,

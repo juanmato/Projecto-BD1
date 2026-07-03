@@ -35,7 +35,7 @@ docker compose up --build
 
 - Frontend: http://localhost:5170
 - API (Swagger): http://localhost:8000/docs
-- MySQL: localhost:3309 — base `deportes_udelar`, usuario `app` / clave `app`
+- MySQL: localhost:3309 — base `deportes_ucu`, usuario `app` / clave `app`
 
 Al crear el contenedor de MySQL por primera vez, se ejecuta automáticamente
 `db/script.sql`, que crea todas las tablas, restricciones y datos maestros
@@ -58,7 +58,7 @@ ejemplo).
    ```bash
    cd backend
    pip install -r requirements.txt
-   export DB_HOST=localhost DB_PORT=3306 DB_USER=root DB_PASSWORD=<tu_clave> DB_NAME=deportes_udelar
+   export DB_HOST=localhost DB_PORT=3306 DB_USER=root DB_PASSWORD=<tu_clave> DB_NAME=deportes_ucu
    uvicorn main:app --reload
    ```
 

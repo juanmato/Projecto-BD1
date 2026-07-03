@@ -10,11 +10,11 @@
 -- ejecute (incluido el init de Docker) lo interprete correctamente.
 SET NAMES utf8mb4;
 
-CREATE DATABASE IF NOT EXISTS deportes_udelar
+CREATE DATABASE IF NOT EXISTS deportes_ucu
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_spanish_ci;
 
-USE deportes_udelar;
+USE deportes_ucu;
 
 -- ----------------------------------------------------------------------------
 -- Tablas

@@ -3,7 +3,7 @@ services:
     image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: deportes_udelar
+      MYSQL_DATABASE: deportes_ucu
       MYSQL_USER: app
       MYSQL_PASSWORD: app
     ports:
@@ -26,7 +26,7 @@ services:
       DB_PORT: "3306"
       DB_USER: app
       DB_PASSWORD: app
-      DB_NAME: deportes_udelar
+      DB_NAME: deportes_ucu
     ports:
       - "8000:8000"
     depends_on:

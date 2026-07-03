@@ -14,8 +14,8 @@ export function InstitutionalHeader({ children }: { children?: React.ReactNode }
           <div className="brand">
             <Escudo size={52} />
             <div className="brand-text">
-              <h1>Universidad Nacional de Ingeniería</h1>
-              <p>Facultad de Ingeniería — Deporte Universitario</p>
+              <h1>Universidad Católica del Uruguay</h1>
+              <p>Facultad de Ingeniería y Tecnologías — Deporte Universitario</p>
             </div>
           </div>
           {children}
@@ -30,8 +30,8 @@ export function InstitutionalFooter() {
     <footer className="site-footer">
       <div className="footer-inner">
         <div>
-          <strong>Universidad Nacional de Ingeniería</strong>
-          <p>Facultad de Ingeniería · Deporte Universitario</p>
+          <strong>Universidad Católica del Uruguay</strong>
+          <p>Facultad de Ingeniería y Tecnologías · Deporte Universitario</p>
         </div>
         <nav className="footer-links">
           <a href="#">Inicio</a>
@@ -41,7 +41,7 @@ export function InstitutionalFooter() {
         </nav>
       </div>
       <div className="footer-copy">
-        © 2026 Universidad Nacional de Ingeniería — Proyecto académico Base de Datos I
+        © 2026 Universidad Católica del Uruguay — Proyecto académico Base de Datos I
       </div>
     </footer>
   );
