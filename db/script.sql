@@ -110,11 +110,6 @@ CREATE TABLE asistencia (
     CONSTRAINT uq_asistencia_inscripcion_fecha UNIQUE (inscripcion_id, fecha)
 ) ENGINE = InnoDB;
 
--- Índices de apoyo para las consultas más frecuentes.
-CREATE INDEX ix_actividad_estado ON actividad (estado);
-CREATE INDEX ix_inscripcion_actividad_estado ON inscripcion (actividad_id, estado);
-CREATE INDEX ix_asistencia_fecha ON asistencia (fecha);
-
 -- ----------------------------------------------------------------------------
 -- Datos maestros
 -- ----------------------------------------------------------------------------
